@@ -1,0 +1,38 @@
+/* ScrollingText.css */
+@keyframes scrollText {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
+  @keyframes fadeLight {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+  }
+  
+  .bg-fade {
+    background-color: #0DC9C5;
+    backdrop-filter: blur(5px);
+  }
+  
+  .animate-scroll {
+    animation: scrollText 60s linear infinite;
+  }
+  
+  .stroke-text {
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    text-stroke: 1px white; /* For browsers supporting text-stroke */
+    white-space: nowrap;
+  }
+  
+  .fade-light {
+    animation: fadeLight 3s infinite;
+  }
